@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EzaXpress</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+<body>
+
+              <!-- 🔹 Splash screen (preloader) -->
+        <div id="splash-screen">
+        <img src="images/eza-logo-removebg-preview.png" alt="Eza Xpress Logo" class="splash-logo">
+        </div>
+    <header>
+    <nav>
+        <ul class='nav-bar'>
+            <li class='logo'><a href='#home' class="logo"><img src="./images/eza-logo-removebg-preview.png" alt="Eza Xpress Logo"/></a></li>
+            <input type='checkbox' id='check' />
+            <span class="menu">
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('about')">About</a></li>
+                <li><a href="#" onclick="showSection('services')">Services</a></li>
+                <li><a href="#" onclick="showSection('booking')">Booking</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+                <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+            </span>
+            <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+        </ul>
+    </nav>
+    </header>
+
+  <section id="home" class="page-section active">
+    <div class="preview-section">
+      <div class="home-intro">
+        <h1>Eza Xpress: We Set the Standard Others Try To Live Up To! </h1>
+        <p>Tour, shuttle, and airport pickup services offered by Eza Xpress drivers.</p>
+        <a href="#" onclick="showSection('booking')" class="cta-button">BOOK A RIDE</a>
+      </div>
+
+      <div class="preview-cards">
+        <div class="about-card"><i class="bi bi-geo-alt"></i> Local Expertise</div>
+        <div class="about-card"><i class="bi bi-clock-history"></i> Timely Service</div>
+        <div class="about-card"><i class="bi bi-patch-check"></i> Licensed Drivers</div>
+        <div class="about-card"><i class="bi bi-activity"></i> First Aid Level 1 Certified</div>
+        <div class="about-card"><i class="bi bi-hand-thumbs-up"></i> Reliable & Friendly</div>
+      </div>
+
+    </div>
+  </section>
+
+<!-- ABOUT -->
+<section id="about" class="page-section about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Eza Xpress</h2>
+                <p class="section-subtitle">
+                    Black-owned transport company founded in 2021, providing excellent services across the Western Cape.
+                </p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-content">
+                    <div class="about-story">
+                        <h3 class="about-title">Our Story</h3>
+                        <p class="about-text">
+                            Eza Xpress (PTY) LTD is a Black-owned company founded on 15 June 2021 by sole Director Xola Eza Mtwa. 
+                            With expertise in all spheres of transport, Xola has steered Eza Xpress to successfully provide 
+                            excellent services to various clients in the Western Cape area.
+                        </p>
+                        <p class="about-text">
+                            Our services include small and large scale transport needs, ranging from local travelling to long 
+                            distance travelling. Our efficient, well-trained team of professional drivers and internal quality 
+                            assurance processes ensure all projects meet customer requirements to perfection.
+                        </p>
+                        
+                        <div class="mission-vision">
+                            <div class="mission">
+                                <h4 class="mv-title">Mission</h4>
+                                <p class="mv-text">
+                                    To be a fully operational business distinguished from competitors and provide private rapid 
+                                    transport that is effective and reliable while promoting skills development and arrive alive campaigns.
+                                </p>
+                            </div>
+                            <div class="vision">
+                                <h4 class="mv-title">Vision</h4>
+                                <p class="mv-text">
+                                    To become the market leader in transportation and travel services through innovation, quality 
+                                    and excellence, changing how public transport operates in our region.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <!-- Leadership Team -->
+                    <div class="leadership-section">
+                        <h4 class="leadership-title">Our Leadership</h4>
+                        <div class="leadership-grid">
+                            <div class="leader-card">
+                                <img
+                                    src="./images/ceo-xola.jpg"
+                                    alt="Xola Eza Mtwa - CEO and Founder"
+                                    class="leader-image"
+                                />
+                                <h5 class="leader-name">Xola Eza Mtwa</h5>
+                                <p class="leader-role">CEO & Founder</p>
+                                <p class="leader-description">
+                                    With extensive expertise in all spheres of transport, Xola founded Eza Xpress in 2021. 
+                                    His vision and leadership have driven the company to provide excellent services across the Western Cape.
+                                </p>
+                            </div>
+                            <div class="leader-card">
+                                <img
+                                    src="./images/future-ceo.jpg"
+                                    alt="Future CEO - Son of Xola Eza Mtwa"
+                                    class="leader-image"
+                                />
+                                <h5 class="leader-name">Future Leadership</h5>
+                                <p class="leader-role">Next Generation CEO</p>
+                                <p class="leader-description">
+                                    The next generation of leadership is being groomed to continue the family legacy of excellence in transport services, 
+                                    ensuring Eza Xpress remains a leader in the industry for years to come.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             <!-- Vehicle Growth Album -->
+            <div class="vehicle-timeline">
+            <h3>Our Growth Journey</h3>
+            <div class="timeline-album horizontal-scroll">
+                <div class="vehicle-card">
+                <img src="./images/vw-mk1.jpg" alt="VW MK1" />
+                <p>2007 VW MK1 — The Beginning</p>
+                </div>
+                <div class="vehicle-card">
+                <img src="./images/corolla-quest.jpg" alt="Toyota Corolla Quest" />
+                <p>Corolla Quest — 2021 to 2022</p>
+                </div>
+                <div class="vehicle-card">
+                <img src="./images/toyota-quantum.jpg" alt="Toyota Quantum" />
+                <p>15-seater Toyota Quantum — Growth Phase</p>
+                </div>
+                <!-- You can add more vehicle cards here -->
+            </div>
+        </div>
+    </section>
+  <!-- SERVICES (Image Slider) -->
+<section id="services" class="page-section homepage-services-slider">
+  <h2 class="services-title">Our Services</h2>
+  
+  <div class="services-slider">
+    <div class="slide active">
+      <img src="./images/tour-preview.jpg" alt="Shuttle Services">
+      <div class="slide-text">
+        <h3>Shuttle Services</h3>
+        <p>Flexible and safe transport for groups and individuals.</p>
+      </div>
+    </div>
+    
+    <div class="slide">
+      <img src="./images/banner(Quatum)7.jpg" alt="Airport Transfers">
+      <div class="slide-text">
+        <h3>Airport Transfers</h3>
+        <p>On-time pickups and drop-offs at Cape Town International.</p>
+      </div>
+    </div>
+    
+    <div class="slide">
+      <img src="./images/banner(Quatum)11.jpg" alt="Tours">
+      <div class="slide-text">
+        <h3>Tours Around Cape Peninsula</h3>
+        <p>Explore the beauty of Cape Town with our guided tours.</p>
+      </div>
+    </div>
+    
+    <div class="slide">
+      <img src="./images/taxi-bg.jpg" alt="Staff Transport">
+      <div class="slide-text">
+        <h3>Staff Transport</h3>
+        <p>Daily transport solutions for your employees and team.</p>
+      </div>
+    </div>
+    
+    <div class="slide">
+      <img src="./images/banner(Quatum)15.jpg" alt="Special Bookings">
+      <div class="slide-text">
+        <h3>Special Bookings</h3>
+        <p>Private charters for events, weddings, or group trips.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- BOOKING -->
+<!-- Booking Section -->
+    <section id="booking" class="page-section booking-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Book Your Transport</h2>
+                <p class="section-subtitle">
+                    Fill out the form below to request your transport service. We'll get back to you with a quote and confirmation.
+                </p>
+            </div>
+            
+            <div class="booking-grid">
+                <!-- Google Map -->
+                <div class="map-container">
+                    <div class="map-card">
+                        <div class="map-header">
+                            <h3 class="map-title">
+                                <i data-lucide="map-pin"></i>
+                                Our Service Area - Cape Town
+                            </h3>
+                        </div>
+                        <div class="map-wrapper">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d211861.3460268312!2d18.30141999999999!3d-33.91596235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc500f8826eed7%3A0x687fe1fc2828aa87!2sCape%20Town%2C%20South%20Africa!5e0!3m2!1sen!2s!4v1640995200000!5m2!1sen!2s"
+                                width="100%"
+                                height="400"
+                                style="border:0;"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                    
+                    <div class="features-card">
+                        <h3 class="features-title">Why Choose Eza Xpress?</h3>
+                        <ul class="features-list">
+                            <li><span class="feature-dot"></span>Professional, experienced drivers</li>
+                            <li><span class="feature-dot"></span>Modern, well-maintained vehicles</li>
+                            <li><span class="feature-dot"></span>Competitive rates with no hidden fees</li>
+                            <li><span class="feature-dot"></span>24/7 availability for your convenience</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Booking Form -->
+                <div class="form-container">
+                    <div class="form-card">
+                        <div class="form-header">
+                            <h3 class="form-title">Book Your Transport</h3>
+                        </div>
+                        <form id="booking-form" class="booking-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="service">Service Type</label>
+                                <select id="service" name="service" required>
+                                    <option value="">Select a service</option>
+                                    <option value="airport-transfer">Airport Transfer</option>
+                                    <option value="shuttle-service">Shuttle Service</option>
+                                    <option value="tours-sightseeing">Tours & Sightseeing</option>
+                                    <option value="staff-transport">Staff Transport</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="Brief description of your transport needs" required>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="pickupDate">Pickup Date</label>
+                                    <input type="date" id="pickupDate" name="pickupDate" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="pickupTime">Pickup Time</label>
+                                    <input type="time" id="pickupTime" name="pickupTime" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Please provide pickup location, destination, number of passengers, and any special requirements..." required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="form-submit">
+                                <i data-lucide="send"></i>
+                                Send Booking Request
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+            <div id="toast" class="toast"></div>
+        </div>
+    </section>
+
+  <!-- CONTACT -->
+    <section id="contact" class="page-section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-subtitle">
+                    Get in touch with Eza Xpress for all your transport needs in Cape Town.
+                </p>
+            </div>
+            
+            <div class="contact-grid">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3 class="contact-title">Get In Touch</h3>
+                        
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="bi bi-telephone"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Phone</h4>
+                                    <p>+27 79 303 4216 </p>       
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="bi bi-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Email</h4>
+                                    <p>info:xola@ezaxpress.co.za</p>
+                                    <p>bookings:xola@ezaxpress.co.za</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="bi bi-geo-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Address</h4>
+                                    <p> 9 Damon's close</p>
+                                    <p> Beroma</p>
+                                    <p>Bellville</p>
+                                    <p>South Africa</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="bi bi-clock-history"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Operating Hours</h4>
+                                    <p>24/7 Service Available</p>
+                                    <p>Office: Mon-Fri 8AM-6PM</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Social Media -->
+                        <div class="social-section">
+                            <h4>Follow Us</h4>
+                            <div class="social-links">
+                                <a href="#" class="social-link facebook">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                                <a href="#" class="social-link twitter">
+                                    <i class="bi bi-tiktok"></i>
+                                </a>
+                                <a href="#" class="social-link instagram">
+                                    <i class= " bi bi-instagram"></i>
+                                </a>
+                                <a href="#" class="social-link linkedin">
+                                    <i class="bi bi-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service Areas -->
+                <div class="service-areas">
+                    <div class="areas-card">
+                        <h3 class="areas-title">Our Service Areas</h3>
+                        <img
+                            src="https://images.unsplash.com/photo-1580060839134-75a5edca2e99?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&h=400"
+                            alt="Cape Town city skyline with Lions Head"
+                            class="areas-image"
+                        />
+                        
+                        <div class="areas-lists">
+                            <div class="areas-column">
+                                <h4>Primary Service Areas</h4>
+                                <ul class="areas-list">
+                                    <li><i data-lucide="map-pin"></i>Cape Town CBD</li>
+                                    <li><i data-lucide="map-pin"></i>V&A Waterfront</li>
+                                    <li><i data-lucide="map-pin"></i>Cape Town International Airport</li>
+                                    <li><i data-lucide="map-pin"></i>Table Mountain Area</li>
+                                    <li><i data-lucide="map-pin"></i>Camps Bay</li>
+                                    <li><i data-lucide="map-pin"></i>Stellenbosch</li>
+                                </ul>
+                            </div>
+                            <div class="areas-column">
+                                <h4>Extended Areas</h4>
+                                <ul class="areas-list">
+                                    <li><i data-lucide="map-pin"></i>Cape Peninsula</li>
+                                    <li><i data-lucide="map-pin"></i>Wine Regions</li>
+                                    <li><i data-lucide="map-pin"></i>Hermanus</li>
+                                    <li><i data-lucide="map-pin"></i>Gordon's Bay</li>
+                                    <li><i data-lucide="map-pin"></i>Franschhoek</li>
+                                    <li><i data-lucide="map-pin"></i>Paarl</li>
+                                </ul>
+                            </div>
+                      </div>
+                    </div>
+                    
+                    <!-- Quick Contact CTA -->
+                    <div class="cta-card">
+                        <div class="cta-content">
+                            <h3>Ready to Travel?</h3>
+                            <p>Contact us now for instant quotes and bookings</p>
+                            <div class="cta-buttons">
+                                <a href="tel:+27 79 303 4216" class="cta-btn primary">
+                                    <i data-lucide="phone"></i>
+                                    Call Now
+                                </a>
+                              <a href="https://wa.me/27793034216" class="cta-btn secondary" target="_blank">
+                                <i data-lucide="message-square"></i>
+                                WhatsApp
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+  <footer class="default-footer" id="site-footer">
+  &copy; 2025 Ezaxpress. All rights reserved.
+  </footer>
+  <script src="./script2.js"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  // Initialize with your actual public key
+  emailjs.init('dR-XVOymamu0XJZhJ');
+</script>
+</body>
+</html>
+</body>
+</html>
